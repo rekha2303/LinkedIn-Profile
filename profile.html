@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Dashboard </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<!-- bootstrap link-->
+		<link rel="stylesheet" href="css/cropper(1).min">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		
+	</head>
+	
+	
+	<body background-color="#17202A">
+		<div class="container"  style="height:810px; width:820px">
+			
+			<div class="top">
+				<img src="linkedin.png" alt="Profile page" class="center">
+			</div>
+			
+			<div class="middle">
+				<img src="pro2.png" alt="Profile pic" class="left" >
+			</div><br><br><br><br><br><br>
+			
+			
+			<div class="id">
+				<p> <h2 >maryam mohemad</h2>
+					<div class="icon1">
+						<p><span><i class='fa fa-square' style='margin-right:16px'></i></span><b>freelancer</b></p><br>
+					</div>
+					
+					<div class="icon2">
+						<p><span><i class='fas fa-users' style='margin-right:6px'></i></span><b>Information Technology Institute(ITI)</b></p>
+					</div>
+					
+					<div class="icon3">
+						<p><span><i class='far fa-address-book'style='margin-right:6px'></i></span><b>See contact info</b></p>
+					</div>
+					
+					<div class="icon4"  style="width:800px; margin:0 auto;[B]padding:20px 0;[/B]"6>
+						<p><span><i class='fas fa-users' style='margin-right:6px'></i></span><b>See connection(+500)</b></p>
+					</div>
+					
+					<div class="info">
+						<h4>Student at Information Technology Institute(ITI)</h4>
+						<h5>Egypt</h5>
+					</div>
+					
+				</div>
+				
+				
+				
+				
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">Add Profile Section  <i class="fa fa-angle-down"></i></button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="#">About</a>
+						<a href="#">Academic</a>
+						<a href="#">Interest</a>
+					</div>	
+					
+					<script>
+						
+						/* When the user clicks on the button, 
+						toggle between hiding and showing the dropdown content */
+						function myFunction() {
+						document.getElementById("myDropdown").classList.toggle("show");
+						}
+						
+						// Close the dropdown if the user clicks outside of it
+						window.onclick = function(event) {
+						if (!event.target.matches('.dropbtn')) {
+						var dropdowns = document.getElementsByClassName("dropdown-content");
+						var i;
+						for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+						}
+						}
+						}
+						}
+					</script>
+					
+					<div class="more">
+						<button class="morebtn">more..</button>
+						<div class="dropdown-content">
+						</div>
+						
+						
+					</div>
+					
+					
+					<div class="edit">
+						<i class='fas fa-pen' style="font-size:24px;color:#2874A6" ></i>
+					</div>
+					
+					
+					<div class="midle_next">		  	     
+						<p>A Front ednd developer | UI developer experienced. Extremely motivated and committed to deliver the highest standard work.I have qualification in Web Developement  using HTML, CSS, SASS, JavaScript,JQuery, Bootstrap Library...</p> <p>I have Ability to hard worker, Shares knowledge,responsibilities, and experties...</p> 
+					</div>
+					
+					<div class="last">
+						<input type="file" id="real-file" hidden="hidden" />
+						<button type="button" id="custom-button">Choose A File</button>
+						<span id="custom-text"></span>
+						
+						<script type="text/javascript">
+							const realFileBtn = document.getElementById("real-file");
+							const customBtn = document.getElementById("custom-button");
+							const custonTxt= document.getElementById("custom-text");
+							
+							customBtn.addEventListener("click",function(){
+								realFileBtn.click();
+								
+							});
+						</script>
+						
+						
+					</div>
+					
+					
+				</div>
+				
+				<div class="more1">
+					
+					<button class="mobtn" type="submit" style="height:33px; width:820px;   position:absolute;  right:-385px;  top:-10px;">show <i class="fa fa-angle-down"></i></button>
+					
+					
+				</div>
+				
+			</body>
+			
+		</html>		
